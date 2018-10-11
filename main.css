@@ -1,0 +1,98 @@
+body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 20% 70% 10%;
+    background-color: navy;
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    text-align: center;
+}
+
+header {
+    background-color: rgb(1, 1, 80);
+    color: white;
+    grid-area: header;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+    background: black;
+    color: white;
+}
+
+aside {
+    grid-area: aside;
+    background: rgb(1, 1, 80);
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 5 (1fr);
+    grid-template-rows: 10% 18% 18% 18% 18% 18%;
+    grid-template-areas: 
+    "category1 category2 category3 category4 category5"
+    "cat1 cat2 cat3 cat4 cat5"
+    "cat1 cat2 cat3 cat4 cat5"
+    "cat1 cat2 cat3 cat4 cat5"
+    "cat1 cat2 cat3 cat4 cat5"
+    "cat1 cat2 cat3 cat4 cat5";
+    color: white;
+}
+
+p {
+    display: inline-block;
+}
+
+.back {
+    text-align: center;
+    display: none;
+}
+
+#cities h2 {
+    grid-area: category1;
+}
+
+#science h2 {
+    grid-area: category2;
+}
+
+#gaming h2 {
+    grid-area: category3;
+}
+
+#sports h2 {
+    grid-area: category4;
+}
+
+#history h2 {
+    grid-area: category5;
+}
+
+#cities div {
+    grid-area: cat1;
+}
+
+#science div {
+    grid-area: cat2;
+}
+
+#gaming div {
+    grid-area: cat3;
+}
+
+#sports div {
+    grid-area: cat4;
+}
+
+#history div {
+    grid-area: cat5;
+}
+
