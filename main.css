@@ -1,13 +1,18 @@
 body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 20% 70% 10%;
+    grid-template-rows: 15% 65% 12% 8%;
     background-color: navy;
     grid-template-areas:
     "header header"
-    "main aside"
+    "main main"
+    "aside aside"
     "footer footer";
     text-align: center;
+    grid-gap: 5px;
 }
 
 header {
@@ -25,18 +30,28 @@ footer {
     grid-area: footer;
     background: black;
     color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 aside {
     grid-area: aside;
     background: rgb(1, 1, 80);
+    text-align: left;
+    color: white;
+}
+
+#edit {
+    display: none;
 }
 
 main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 5 (1fr);
+    grid-template-columns: 19% 19% 19% 19% 19%;
     grid-template-rows: 10% 18% 18% 18% 18% 18%;
+    grid-gap: 5px;
     grid-template-areas: 
     "category1 category2 category3 category4 category5"
     "cat1 cat2 cat3 cat4 cat5"
@@ -47,13 +62,13 @@ main {
     color: white;
 }
 
-p {
-    display: inline-block;
+h2 {
+    font-size: 16px;
+    font-weight: 300;
 }
 
-.back {
-    text-align: center;
-    display: none;
+p {
+    display: inline-block;
 }
 
 #cities h2 {
@@ -78,21 +93,30 @@ p {
 
 #cities div {
     grid-area: cat1;
+    text-align: center;
 }
 
 #science div {
     grid-area: cat2;
+    text-align: center;
 }
 
 #gaming div {
     grid-area: cat3;
+    text-align: center;
 }
 
 #sports div {
     grid-area: cat4;
+    text-align: center;
 }
 
 #history div {
     grid-area: cat5;
+    text-align: center;
 }
 
+.back {
+    text-align: center;
+    display: none;
+}
