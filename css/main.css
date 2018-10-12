@@ -54,12 +54,12 @@ main {
     grid-template-rows: 10% 18% 18% 18% 18% 18%;
     grid-gap: 5px;
     grid-template-areas: 
+    "category1 category2 category3 category4 category5"
     "cat1 cat2 cat3 cat4 cat5"
-    "1 6 11 16 21"
-    "2 7 12 17 22"
-    "3 8 13 18 23"
-    "4 9 14 19 24"
-    "5 10 15 20 25";
+    "cat12 cat22 cat32 cat42 cat52"
+    "cat13 cat23 cat33 cat43 cat53"
+    "cat14 cat24 cat34 cat44 cat54"
+    "cat15 cat25 cat35 cat45 cat55";
     color: white;
     margin-bottom: 10px
 }
@@ -73,124 +73,49 @@ p {
     display: inline-block;
 }
 
-#cities {
+#cities h2 {
+    grid-area: category1;
+}
+
+#science h2 {
+    grid-area: category2;
+}
+
+#gaming h2 {
+    grid-area: category3;
+}
+
+#sports h2 {
+    grid-area: category4;
+}
+
+#history h2 {
+    grid-area: category5;
+}
+
+#cities:  {
     grid-area: cat1;
+    text-align: center;
 }
 
-#science {
+#science .one {
     grid-area: cat2;
+    text-align: center;
 }
 
-#gaming {
+#gaming .one {
     grid-area: cat3;
+    text-align: center;
 }
 
-#sports {
+#sports .one {
     grid-area: cat4;
+    text-align: center;
 }
 
-#history {
+#history .one {
     grid-area: cat5;
-}
-
-#1 {
-    grid-area: 1;
-}
-
-#2 {
-    grid-area: 2;
-}
-
-#3 {
-    grid-area: 3;
-}
-
-#4 {
-    grid-area: 4;
-}
-
-#5 {
-    grid-area: 5;
-}
-
-#6 {
-    grid-area: 6;
-}
-
-#7 {
-    grid-area: 7;
-}
-
-#8 {
-    grid-area: 8;
-}
-
-#9 {
-    grid-area: 9;
-}
-
-#10 {
-    grid-area: 10;
-}
-
-#11 {
-    grid-area: 11;
-}
-
-#12 {
-    grid-area: 12;
-}
-
-#13 {
-    grid-area: 13;
-}
-
-#14 {
-    grid-area: 14;
-}
-
-#15 {
-    grid-area: 15;
-}
-
-#16 {
-    grid-area: 16;
-}
-
-#17 {
-    grid-area: 17;
-}
-
-#18 {
-    grid-area: 18;
-}
-
-#19 {
-    grid-area: 19;
-}
-
-#20 {
-    grid-area: 20;
-}
-
-#21 {
-    grid-area: 21;
-}
-
-#22 {
-    grid-area: 22;
-}
-
-#23 {
-    grid-area: 23;
-}
-
-#24 {
-    grid-area: 24;
-}
-
-#25 {
-    grid-area: 25;
+    text-align: center;
 }
 
 .back {
