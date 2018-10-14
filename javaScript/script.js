@@ -4,30 +4,30 @@ const submit = (answerIndex, key) => {
 }
 
 const togglePanel = q => {
-    const panel = document.querySelector('#panel')
-    panel.innerHTML = ''
-    panel.appendChild(document.createTextNode(q.question))
+    const panel = document.querySelector('#panel');
+    panel.innerHTML = '';
+    panel.appendChild(document.createTextNode(q.question));
     q.answers.forEach((a, index) => {
-        const button = document.createElement('button')
-        button.appendChild(document.createTextNode(a))
-        button.addEventListener('click', () => submit(index, q.key))
-        panel.appendChild(button)
-    })
+        const button = document.createElement('button');
+        button.appendChild(document.createTextNode(a));
+        button.addEventListener('click', () => submit(index, q.key));
+        panel.appendChild(button);
+    });
     panel.classList.toggle('open')
-}
+};
 
 const populateColumn = (columnId, questions) => {
     questions.forEach(question => {
-        const q = document.createElement('button')
-        q.appendChild(document.createTextNode(question.value))
-        q.classList.add('card')
-        q.addEventListener('click', () => togglePanel(question))
-        document.querySelector(`#${columnId}`).appendChild(q)
-    })
+        const q = document.createElement('button');
+        q.appendChild(document.createTextNode(question.value));
+        q.classList.add('card');
+        q.addEventListener('click', () => togglePanel(question));
+        document.querySelector(`#${columnId}`).appendChild(q);
+    });
 }
 
-populateColumn('science', scienceQs)
-populateColumn('gaming', gamingQs)
-populateColumn('cities', capitalsQs)
-populateColumn('history', historyQs)
-populateColumn('sports', sportsQs)
+populateColumn('science', scienceQs);
+populateColumn('gaming', gamingQs);
+populateColumn('cities', capitalsQs);
+populateColumn('history', historyQs);
+populateColumn('sports', sportsQs);
