@@ -75,7 +75,19 @@ h2 {
     display: none;
 }
 
+button {
+    background: navy;
+    box-shadow: 0 0 20px rgba(0,0,0,.5)
+}
+
 #panel {
     position: fixed;
-
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    background: rgba(8, 2, 85, 0.9);
+    z-index: 100;
+    transition: all .3s ease;
+    overflow: hidden;
 }
