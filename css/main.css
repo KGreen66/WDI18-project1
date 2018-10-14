@@ -53,163 +53,29 @@ aside {
 
 main {
     grid-area: main;
-    display: grid;
-    grid-template-columns: 19% 19% 19% 19% 19%;
-    grid-template-rows: 10% 18% 18% 18% 18% 18%;
-    grid-gap: 5px;
-    grid-template-areas: 
-    "category1 category2 category3 category4 category5"
-    "cat1 cat6 cat11 cat16 cat21"
-    "cat2 cat7 cat12 cat17 cat22"
-    "cat3 cat8 cat13 cat18 cat23"
-    "cat4 cat9 cat14 cat19 cat24"
-    "cat5 cat10 cat15 cat20 cat25";
-    color: white;
-    margin-bottom: 10px;
-}
-
-#cities {
-    grid-area: category1;
-}
-
-#science {
-    grid-area: category2;
-}
-
-#gaming {
-    grid-area: category3;
-}
-
-#sports {
-    grid-area: category4;
-}
-
-#history {
-    grid-area: category5;
-}
-
-#q1 {
-    grid-area: cat1;
-}
-
-#q2 {
-    grid-area: cat2;
-}
-
-#q3 {
-    grid-area: cat3;
-}
-
-#q4 {
-    grid-area: cat4;
-}
-
-#q5 {
-    grid-area: cat5;
-}
-
-#q6 {
-    grid-area: cat6;
-}
-
-#q7 {
-    grid-area: cat7;
-}
-
-#q8 {
-    grid-area: cat8;
-}
-
-#q9 {
-    grid-area: cat9;
-}
-
-#q10 {
-    grid-area: cat10;
-}
-
-#q11 {
-    grid-area: cat11;
-}
-
-#q12 {
-    grid-area: cat12;
-}
-
-#q13 {
-    grid-area: cat13;
-}
-
-#q14 {
-    grid-area: cat14;
-}
-
-#q15 {
-    grid-area: cat15;
-}
-
-#q16 {
-    grid-area: cat16;
-}
-
-#q17 {
-    grid-area: cat17;
-}
-
-#q18 {
-    grid-area: cat18;
-}
-
-#q19 {
-    grid-area: cat19;
-}
-
-#q20 {
-    grid-area: cat20;
-}
-
-#q21 {
-    grid-area: cat21;
-}
-
-#q22 {
-    grid-area: cat22;
-}
-
-#q23 {
-    grid-area: cat23;
-}
-
-#q24 {
-    grid-area: cat24;
-}
-
-#q25 {
-    grid-area: cat25;
-}
-
-button {
-    background-color: navy;
-    box-shadow: 0 0 25px
-    rgba(0,0,0,.5)
-    inset;
-    outline: 3px;
-    border-color: goldenrod;
-    color: white;
     width: 100%;
-    height: 100%;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50vh;
 }
 
 h2 {
     font-size: 16px;
     font-weight: 300;
-}
-
-p {
-    display: inline-block;
+    color: white;
 }
 
 .back {
     text-align: center;
     display: none;
+}
+
+#panel {
+    position: fixed;
+
 }
