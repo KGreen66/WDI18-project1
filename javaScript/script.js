@@ -1,10 +1,13 @@
 const panel = document.querySelector('#panel');
 const points = document.querySelector('#playerPoints')
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
-const dailyCat = getRandomInt(5)
-const dailyQuest = getRandomInt(5)
+
+// Daily double
+// pick a random tile that would be worth double value.
+// function getRandomInt(max) {
+//     return Math.floor(Math.random() * Math.floor(max));
+// }
+// const dailyCat = getRandomInt(5)
+// const dailyQuest = getRandomInt(5)
 
 const submit = (answerIndex, key, value) => {
     let newPoints = +points.innerHTML;
@@ -34,7 +37,7 @@ const togglePanel = q => {
     });
     panel.classList.toggle('open')
     //create div (30)
-    const timer = document.createElement('div')
+    //const timer = document.createElement('div')
     //setinterval(1000)
     //create a function that if i !== 0 to subtract 1
     //else if i === 0, display out of time, clearInterval, close window function
