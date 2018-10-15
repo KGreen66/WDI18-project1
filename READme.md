@@ -22,6 +22,10 @@ When players enter the site, the Jeopardy board will already be built out with s
 ![Image](Wireframe.jpg)
 
 ## Future Development
-- Make it multiplayer
 - Make it responsive
-- Add some more features that I didn't get to add yet
+- finish adding music and timer for questions
+- finish adding capabilities for multiplayer
+- finish the code started for a double jeopardy feature
+- finish the code started for a round two with double points values
+- add the ability for the user to change between different themes
+- Final Jeopardy feature
