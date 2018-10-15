@@ -19,7 +19,7 @@ const submit = (answerIndex, key, value) => {
     } else {
         panel.appendChild(document.createTextNode(`You are incorrect!`));
     }
-    setTimeout(() => panel.classList.toggle('open'), 2000);
+    setTimeout(() => panel.classList.toggle('open'), 1000);
     points.innerHTML = newPoints
 }
 
@@ -37,11 +37,22 @@ const togglePanel = q => {
     });
     panel.classList.toggle('open')
     //create div (30)
-    //const timer = document.createElement('div')
-    //setinterval(1000)
+     //setinterval(1000)
     //create a function that if i !== 0 to subtract 1
     //else if i === 0, display out of time, clearInterval, close window function
-    
+    // const timer = document.createElement('div')
+    // timer.classList.add('timer')
+    // timer.appendChild(document.createTextNode(30))
+    // panel.appendChild(timer)
+    // const setTimer = setInterval(countdown, 1000)
+    // function countdown(){
+    //     if(+timer > 0){
+    //         timer = +timer -1
+    //         return timer
+    //     } else (+timer === 0){
+    //         clearInterval(setTimer)
+    //     }
+    // }
 };
 
 const populateColumn = (columnId, questions) => {
@@ -63,3 +74,13 @@ populateColumn('cities', capitalsQs);
 populateColumn('history', historyQs);
 populateColumn('sports', sportsQs);
 
+
+// Game over function
+// const gameOver = quesAnswered => {
+//     const quesAnswered = document.querySelectorAll("button.answered")
+//             if (quesAnswered.length === 25){
+//                 panel.innerHTML = '';
+//                 panel.appendChild(document.createTextNode("Game Over" + points));
+//                 panel.classList.toggle('open')
+//             }
+// }
